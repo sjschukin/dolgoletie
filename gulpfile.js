@@ -3,7 +3,7 @@ const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 
-const themeRoot = "web/themes/discreet_tan/";
+const themeRoot = "web/themes/custom/discreet_tan/";
 
 function browsersync() {
   browserSync.init({
