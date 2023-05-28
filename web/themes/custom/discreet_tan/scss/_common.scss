@@ -196,7 +196,7 @@ body.path-frontpage #main-content {
 
   .navbar-brand .site-title {
     @include media-breakpoint-down(md) {
-      font-size: 18px;
+      display: none;
     }
   }
 }
@@ -366,7 +366,7 @@ body.path-frontpage #main-content {
       }
 
       @include media-breakpoint-down(md) {
-        font-size: 18px;
+        display: none;
       }
     }
   }

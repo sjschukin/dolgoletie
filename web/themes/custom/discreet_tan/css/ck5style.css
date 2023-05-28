@@ -11303,7 +11303,7 @@ a > .ck-content code {
 }
 @media (max-width: 767.98px) {
   .ck-content .navbar .navbar-brand .site-title {
-    font-size: 18px;
+    display: none;
   }
 }
 .ck-content .navbar-brand {
@@ -11461,7 +11461,7 @@ a > .ck-content code {
 }
 @media (max-width: 767.98px) {
   .ck-content .sticky .navbar .navbar-brand .site-title {
-    font-size: 18px;
+    display: none;
   }
 }
 .ck-content .sticky .navbar-toggler .toggler-icon {
