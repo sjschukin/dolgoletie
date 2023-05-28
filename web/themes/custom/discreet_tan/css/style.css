@@ -12589,9 +12589,6 @@ input:focus, textarea:focus {
   border-color: #ff851b;
 }
 .contact-area .contact-form form input[type=submit] {
-  padding: 16px 40px;
-  border-radius: 5px;
-  background: #ff851b;
-  color: #fff;
+  width: auto;
 }
 /*# sourceMappingURL=style.css.map */
