@@ -2,3 +2,6 @@ global-styling:
   css:
     theme:
       css/style.css: {}
+      css/lineicons.css: {}
+  js:
+    js/main.js: {}
