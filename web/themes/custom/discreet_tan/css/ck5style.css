@@ -11679,4 +11679,50 @@ a > .ck-content code {
     line-height: 28px;
   }
 }
+.ck-content .contact-area {
+  background: #f6f6f6;
+  padding: 120px 0;
+  position: relative;
+  z-index: 1;
+}
+.ck-content .contact-area .map-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  text-align: center;
+  z-index: -1;
+}
+.ck-content .contact-area .contact-content h2, .ck-content .contact-area .contact-content .h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+.ck-content .contact-area .contact-content p {
+  margin-bottom: 35px;
+  padding-right: 30px;
+}
+.ck-content .contact-area .contact-content h3, .ck-content .contact-area .contact-content .h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.ck-content .contact-area .contact-content h4 a, .ck-content .contact-area .contact-content .h4 a {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.ck-content .contact-area .contact-form form input::placeholder, .ck-content .contact-area .contact-form form textarea::placeholder {
+  opacity: 1;
+}
+.ck-content .contact-area .contact-form form input:focus, .ck-content .contact-area .contact-form form textarea:focus {
+  border-color: #ff851b;
+}
+.ck-content .contact-area .contact-form form input[type=submit] {
+  padding: 16px 40px;
+  border-radius: 5px;
+  background: #ff851b;
+  color: #fff;
+}
 /*# sourceMappingURL=ck5style.css.map */

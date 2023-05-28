@@ -12547,4 +12547,51 @@ input:focus, textarea:focus {
     line-height: 28px;
   }
 }
+
+.contact-area {
+  background: #f6f6f6;
+  padding: 120px 0;
+  position: relative;
+  z-index: 1;
+}
+.contact-area .map-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  text-align: center;
+  z-index: -1;
+}
+.contact-area .contact-content h2, .contact-area .contact-content .h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+.contact-area .contact-content p {
+  margin-bottom: 35px;
+  padding-right: 30px;
+}
+.contact-area .contact-content h3, .contact-area .contact-content .h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.contact-area .contact-content h4 a, .contact-area .contact-content .h4 a {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.contact-area .contact-form form input::placeholder, .contact-area .contact-form form textarea::placeholder {
+  opacity: 1;
+}
+.contact-area .contact-form form input:focus, .contact-area .contact-form form textarea:focus {
+  border-color: #ff851b;
+}
+.contact-area .contact-form form input[type=submit] {
+  padding: 16px 40px;
+  border-radius: 5px;
+  background: #ff851b;
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */

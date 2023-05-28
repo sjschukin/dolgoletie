@@ -614,3 +614,60 @@ input, textarea {
     }
   }
 }
+
+// contacts *******************************************************************
+.contact-area {
+  background: $basic-smoke-white-color;
+  padding: 120px 0;
+  position: relative;
+  z-index: 1;
+
+  .map-bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    text-align: center;
+    z-index: -1;
+  }
+
+  .contact-content {
+    h2 {
+      font-size: 40px;
+      font-weight: 500;
+      margin-bottom: 35px;
+    }
+
+    p {
+      margin-bottom: 35px;
+      padding-right: 30px;
+    }
+
+    h3 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    h4 a {
+      font-size: 25px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+  }
+
+  .contact-form form {
+    input::placeholder, textarea::placeholder {
+      opacity: 1;
+    }
+
+    input:focus, textarea:focus {
+      border-color: $basic-orange-color;
+    }
+
+    input[type=submit] {
+      width: auto;
+    }
+  }
+}
