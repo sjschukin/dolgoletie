@@ -11301,6 +11301,11 @@ a > .ck-content code {
   position: relative;
   transition: all 0.3s ease-out 0s;
 }
+@media (max-width: 767.98px) {
+  .ck-content .navbar .navbar-brand .site-title {
+    font-size: 18px;
+  }
+}
 .ck-content .navbar-brand {
   padding: 0;
 }
@@ -11450,6 +11455,14 @@ a > .ck-content code {
 }
 .ck-content .sticky .navbar .navbar-brand .site-title {
   color: #283747;
+}
+.ck-content .sticky .navbar .navbar-brand .site-title:hover {
+  color: #283747;
+}
+@media (max-width: 767.98px) {
+  .ck-content .sticky .navbar .navbar-brand .site-title {
+    font-size: 18px;
+  }
 }
 .ck-content .sticky .navbar-toggler .toggler-icon {
   background-color: #283747;
