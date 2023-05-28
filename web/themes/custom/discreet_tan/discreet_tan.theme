@@ -4,3 +4,12 @@
  * @file
  * DiscreetTan theme file.
  */
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function discreet_tan_page_attachments_alter(&$page) {
+  if (Drupal::service('path.matcher')->isFrontPage()) {
+    $page['#attached']['library'][] = 'discreet_tan/front-page';
+  }
+}

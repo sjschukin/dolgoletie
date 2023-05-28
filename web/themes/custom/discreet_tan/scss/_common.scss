@@ -156,6 +156,11 @@ input, textarea {
   }
 }
 
+// front page *****************************************************************
+body.path-frontpage #main-content {
+  display: none;
+}
+
 // section title **************************************************************
 .section-title {
   h2 {
@@ -669,5 +674,15 @@ input, textarea {
     input[type=submit] {
       width: auto;
     }
+  }
+}
+
+// footer *********************************************************************
+.region-footer {
+  p {
+    color: $basic-white-color;
+    margin: 0;
+    text-align: center;
+    font-weight: 300;
   }
 }
