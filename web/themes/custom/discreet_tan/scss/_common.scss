@@ -357,6 +357,10 @@ body.path-frontpage #main-content {
     z-index: 1;
     overflow: hidden;
 
+    &.is-active {
+      color: $basic-white-color;
+    }
+
     &::after {
       content: '';
       position: absolute;
@@ -726,4 +730,9 @@ body.path-frontpage #main-content {
     text-align: center;
     font-weight: 300;
   }
+}
+
+// page ***********************************************************************
+#block-discreet-tan-page-title {
+  margin-top: 80px;
 }

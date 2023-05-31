@@ -12317,6 +12317,9 @@ body.path-frontpage #main-content {
   z-index: 1;
   overflow: hidden;
 }
+.navbar-nav li.nav-item:last-child a.is-active {
+  color: #fff;
+}
 .navbar-nav li.nav-item:last-child a::after {
   content: "";
   position: absolute;
@@ -12638,5 +12641,9 @@ body.path-frontpage #main-content {
   margin: 0;
   text-align: center;
   font-weight: 300;
+}
+
+#block-discreet-tan-page-title {
+  margin-top: 80px;
 }
 /*# sourceMappingURL=style.css.map */

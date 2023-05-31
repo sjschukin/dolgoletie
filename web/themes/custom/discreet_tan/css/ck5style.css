@@ -11452,6 +11452,9 @@ a > .ck-content code {
   z-index: 1;
   overflow: hidden;
 }
+.ck-content .navbar-nav li.nav-item:last-child a.is-active {
+  color: #fff;
+}
 .ck-content .navbar-nav li.nav-item:last-child a::after {
   content: "";
   position: absolute;
@@ -11766,5 +11769,8 @@ a > .ck-content code {
   margin: 0;
   text-align: center;
   font-weight: 300;
+}
+.ck-content #block-discreet-tan-page-title {
+  margin-top: 80px;
 }
 /*# sourceMappingURL=ck5style.css.map */

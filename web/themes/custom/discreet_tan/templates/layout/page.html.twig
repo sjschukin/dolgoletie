@@ -50,6 +50,11 @@ set nav_classes = 'navbar navbar-expand-lg' ~
 %}
 
 {%
+set navbar_classes = 'header-navbar' ~
+  (is_front ? ' ' : ' sticky')
+%}
+
+{%
 set footer_classes = ' ' ~
   (b5_footer_schema != 'none' ? " footer-#{b5_footer_schema}" : ' ') ~
   (b5_footer_schema != 'none' ? (b5_footer_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
@@ -60,7 +65,7 @@ set footer_classes = ' ' ~
   {{ page.header }}
 
   {% if page.nav_branding or page.nav_main or page.nav_additional %}
-  <div id="header_navbar" class="header-navbar">
+  <div id="header_navbar" class="{{ navbar_classes }}">
     <nav class="{{ nav_classes }}">
       <div class="{{ b5_top_container }} d-flex">
         {{ page.nav_branding }}
