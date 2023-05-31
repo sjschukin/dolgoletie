@@ -11232,6 +11232,29 @@ a > .ck-content code {
 .ck-content input:focus, .ck-content textarea:focus {
   border-color: #ff851b;
 }
+.ck-content .back-to-top {
+  width: 45px;
+  height: 45px;
+  background: #ff851b;
+  text-align: center;
+  line-height: 45px;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  cursor: pointer;
+  transition: all 0.3s ease-out 0s;
+}
+.ck-content .back-to-top.btn-hover {
+  position: fixed;
+  z-index: 99;
+}
+.ck-content .back-to-top:hover {
+  color: #fff;
+}
 .ck-content .main-btn {
   display: inline-block;
   font-weight: 600;
