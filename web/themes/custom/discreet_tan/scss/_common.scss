@@ -341,7 +341,7 @@ body.path-frontpage #main-content {
         color: $basic-dark-color;
       }
 
-      &.is-active, &:hover {
+      &:hover {
         color: $basic-orange-color;
       }
     }
@@ -356,10 +356,6 @@ body.path-frontpage #main-content {
     position: relative;
     z-index: 1;
     overflow: hidden;
-
-    &.is-active {
-      color: $basic-white-color;
-    }
 
     &::after {
       content: '';
@@ -413,7 +409,7 @@ body.path-frontpage #main-content {
       background-color: $basic-orange-color;
     }
 
-    &.is-active, &:hover {
+    &:hover {
       color: $basic-orange-color;
     }
 
@@ -607,11 +603,7 @@ body.path-frontpage #main-content {
 }
 
 // course *********************************************************************
-.course-area {
-  padding-top: 170px;
-  position: relative;
-  z-index: 1;
-
+%single-course {
   .single-course {
     overflow: hidden;
     border-radius: 10px;
@@ -663,6 +655,21 @@ body.path-frontpage #main-content {
       }
     }
   }
+}
+
+.course-area {
+  padding-top: 170px;
+  position: relative;
+  z-index: 1;
+
+  @extend %single-course;
+}
+
+.course-area-view {
+  position: relative;
+  z-index: 1;
+
+  @extend %single-course;
 }
 
 // contacts *******************************************************************

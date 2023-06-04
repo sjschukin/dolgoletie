@@ -11439,7 +11439,7 @@ a > .ck-content code {
     color: #283747;
   }
 }
-.ck-content .navbar-nav .nav-item a.is-active, .ck-content .navbar-nav .nav-item a:hover {
+.ck-content .navbar-nav .nav-item a:hover {
   color: #ff851b;
 }
 .ck-content .navbar-nav li.nav-item:last-child a {
@@ -11451,9 +11451,6 @@ a > .ck-content code {
   position: relative;
   z-index: 1;
   overflow: hidden;
-}
-.ck-content .navbar-nav li.nav-item:last-child a.is-active {
-  color: #fff;
 }
 .ck-content .navbar-nav li.nav-item:last-child a::after {
   content: "";
@@ -11499,7 +11496,7 @@ a > .ck-content code {
 .ck-content .sticky .navbar-nav .nav-item a::before {
   background-color: #ff851b;
 }
-.ck-content .sticky .navbar-nav .nav-item a.is-active, .ck-content .sticky .navbar-nav .nav-item a:hover {
+.ck-content .sticky .navbar-nav .nav-item a:hover {
   color: #ff851b;
 }
 .ck-content .sticky .navbar-nav .nav-item a.header-btn {
@@ -11670,12 +11667,7 @@ a > .ck-content code {
 .ck-content .skill-area .single-skill .skill-content p {
   line-height: 24px;
 }
-.ck-content .course-area {
-  padding-top: 170px;
-  position: relative;
-  z-index: 1;
-}
-.ck-content .course-area .single-course {
+.ck-content .course-area-view .single-course, .ck-content .course-area .single-course {
   overflow: hidden;
   border-radius: 10px;
   margin-bottom: 30px;
@@ -11684,42 +11676,51 @@ a > .ck-content code {
   transition: all 0.3s ease-out 0s;
   box-shadow: 0px 0px 61px rgba(85, 85, 85, 0.1);
 }
-.ck-content .course-area .single-course:hover {
+.ck-content .course-area-view .single-course:hover, .ck-content .course-area .single-course:hover {
   box-shadow: 0px 15px 61px rgba(85, 85, 85, 0.8);
 }
-.ck-content .course-area .single-course:hover .course-img a img {
+.ck-content .course-area-view .single-course:hover .course-img a img, .ck-content .course-area .single-course:hover .course-img a img {
   transform: scale(1.2);
 }
-.ck-content .course-area .single-course .course-img {
+.ck-content .course-area-view .single-course .course-img, .ck-content .course-area .single-course .course-img {
   overflow: hidden;
 }
-.ck-content .course-area .single-course .course-img a img {
+.ck-content .course-area-view .single-course .course-img a img, .ck-content .course-area .single-course .course-img a img {
   width: 100%;
   transition: all 0.3s ease-out 0s;
 }
-.ck-content .course-area .single-course .course-content {
+.ck-content .course-area-view .single-course .course-content, .ck-content .course-area .single-course .course-content {
   padding: 30px 25px;
 }
-.ck-content .course-area .single-course .course-content h4 a, .ck-content .course-area .single-course .course-content .h4 a {
+.ck-content .course-area-view .single-course .course-content h4 a, .ck-content .course-area .single-course .course-content h4 a, .ck-content .course-area-view .single-course .course-content .h4 a, .ck-content .course-area .single-course .course-content .h4 a {
   font-size: 24px;
   line-height: 32px;
   font-weight: 500;
   margin-bottom: 15px;
 }
-.ck-content .course-area .single-course .course-content h4 a:hover, .ck-content .course-area .single-course .course-content .h4 a:hover {
+.ck-content .course-area-view .single-course .course-content h4 a:hover, .ck-content .course-area .single-course .course-content h4 a:hover, .ck-content .course-area-view .single-course .course-content .h4 a:hover, .ck-content .course-area .single-course .course-content .h4 a:hover {
   color: #ff851b;
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .ck-content .course-area .single-course .course-content h4 a, .ck-content .course-area .single-course .course-content .h4 a {
+  .ck-content .course-area-view .single-course .course-content h4 a, .ck-content .course-area .single-course .course-content h4 a, .ck-content .course-area-view .single-course .course-content .h4 a, .ck-content .course-area .single-course .course-content .h4 a {
     font-size: 18px;
     line-height: 26px;
   }
 }
 @media (max-width: 991.98px) {
-  .ck-content .course-area .single-course .course-content h4 a, .ck-content .course-area .single-course .course-content .h4 a {
+  .ck-content .course-area-view .single-course .course-content h4 a, .ck-content .course-area .single-course .course-content h4 a, .ck-content .course-area-view .single-course .course-content .h4 a, .ck-content .course-area .single-course .course-content .h4 a {
     font-size: 20px;
     line-height: 28px;
   }
+}
+.ck-content .course-area {
+  padding-top: 170px;
+  position: relative;
+  z-index: 1;
+}
+.ck-content .course-area-view {
+  position: relative;
+  z-index: 1;
 }
 .ck-content .contact-area {
   background: #f6f6f6;
