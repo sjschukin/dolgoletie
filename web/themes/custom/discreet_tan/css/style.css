@@ -12186,9 +12186,12 @@ body.path-frontpage #main-content {
   transition: all 0.3s ease-out 0s;
 }
 @media (max-width: 767.98px) {
-  .navbar .navbar-brand .site-title {
+  .navbar .navbar-brand .site-logo {
     display: none;
   }
+}
+.navbar .navbar-brand .site-title {
+  text-shadow: 1px 1px 0px #000000;
 }
 
 .navbar-brand {
@@ -12197,6 +12200,7 @@ body.path-frontpage #main-content {
 
 .navbar-toggler {
   padding: 0;
+  border: none;
 }
 .navbar-toggler:focus {
   box-shadow: none;
@@ -12344,16 +12348,12 @@ body.path-frontpage #main-content {
 }
 .sticky .navbar .navbar-brand .site-title {
   color: #283747;
+  text-shadow: none;
 }
 .sticky .navbar .navbar-brand .site-title:hover {
   color: #283747;
 }
-@media (max-width: 767.98px) {
-  .sticky .navbar .navbar-brand .site-title {
-    display: none;
-  }
-}
-.sticky .navbar-toggler .toggler-icon {
+.sticky .navbar-toggler {
   background-color: #283747;
 }
 .sticky .navbar-nav .nav-item a {

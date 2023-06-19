@@ -221,9 +221,15 @@ body.path-frontpage #main-content {
   position: relative;
   transition: all 0.3s ease-out 0s;
 
-  .navbar-brand .site-title {
-    @include media-breakpoint-down(md) {
-      display: none;
+  .navbar-brand {
+    .site-logo {
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+
+    .site-title {
+      text-shadow: 1px 1px 0px #000000;
     }
   }
 }
@@ -234,10 +240,13 @@ body.path-frontpage #main-content {
 
 .navbar-toggler {
   padding: 0;
+  border: none;
 
   &:focus {
     box-shadow: none;
   }
+
+
 
   .toggler-icon {
     width: 30px;
@@ -387,18 +396,15 @@ body.path-frontpage #main-content {
 
     .navbar-brand .site-title {
       color: $basic-dark-color;
+      text-shadow: none;
 
       &:hover {
         color: $basic-dark-color;
       }
-
-      @include media-breakpoint-down(md) {
-        display: none;
-      }
     }
   }
 
-  .navbar-toggler .toggler-icon {
+  .navbar-toggler {
     background-color: $basic-dark-color;
   }
 
