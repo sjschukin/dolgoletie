@@ -12606,6 +12606,23 @@ body.path-frontpage #main-content {
   z-index: 1;
 }
 
+.map-area path {
+  stroke: #283747;
+  stroke-width: 0.5;
+  fill: #f6f6f6;
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+.map-area path:hover {
+  fill: #ff851b;
+}
+.map-area #region-tooltip {
+  opacity: 0;
+  position: absolute;
+  background-color: black;
+  color: white;
+}
+
 .contact-area {
   background: #f6f6f6;
   padding: 120px 0;

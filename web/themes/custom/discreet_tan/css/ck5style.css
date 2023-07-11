@@ -11732,6 +11732,22 @@ a > .ck-content code {
   position: relative;
   z-index: 1;
 }
+.ck-content .map-area path {
+  stroke: #283747;
+  stroke-width: 0.5;
+  fill: #f6f6f6;
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+.ck-content .map-area path:hover {
+  fill: #ff851b;
+}
+.ck-content .map-area #region-tooltip {
+  opacity: 0;
+  position: absolute;
+  background-color: black;
+  color: white;
+}
 .ck-content .contact-area {
   background: #f6f6f6;
   padding: 120px 0;

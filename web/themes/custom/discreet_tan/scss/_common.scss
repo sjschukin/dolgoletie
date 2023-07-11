@@ -694,6 +694,28 @@ body.path-frontpage #main-content {
   @extend %single-course;
 }
 
+// map *********************************************************************
+.map-area {
+  path {
+    stroke: $basic-dark-color;
+    stroke-width: 0.5;
+    fill: $basic-smoke-white-color;
+    transition-duration: 200ms;
+    cursor: pointer;
+
+    &:hover {
+      fill: $basic-orange-color;
+    }
+  }
+
+  #region-tooltip {
+    opacity: 0;
+    position: absolute;
+    background-color: black;
+    color: white;
+  }
+}
+
 // contacts *******************************************************************
 .contact-area {
   background: $basic-smoke-white-color;
