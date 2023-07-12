@@ -11161,28 +11161,62 @@ a > .ck-content code {
 .ck-content img {
   max-width: 100%;
 }
-.ck-content a:focus, .ck-content input:focus, .ck-content textarea:focus, .ck-content button:focus {
+.ck-content a:focus,
+.ck-content input:focus,
+.ck-content textarea:focus,
+.ck-content button:focus {
   text-decoration: none;
   outline: none;
 }
 .ck-content a:hover {
   text-decoration: none;
 }
-.ck-content i, .ck-content span, .ck-content a {
+.ck-content i,
+.ck-content span,
+.ck-content a {
   display: inline-block;
   text-decoration: none;
 }
 .ck-content a {
   transition: all 0.3s ease-out 0s;
 }
-.ck-content audio, .ck-content canvas, .ck-content iframe, .ck-content img, .ck-content svg, .ck-content video {
+.ck-content audio,
+.ck-content canvas,
+.ck-content iframe,
+.ck-content img,
+.ck-content svg,
+.ck-content video {
   vertical-align: middle;
 }
-.ck-content h1, .ck-content .h1, .ck-content h2, .ck-content .h2, .ck-content h3, .ck-content .h3, .ck-content h4, .ck-content .h4, .ck-content h5, .ck-content .h5, .ck-content h6, .ck-content .h6, .ck-content .form-wrapper.accordion .accordion-item h2, .ck-content .form-wrapper.accordion .accordion-item .h2 {
+.ck-content h1, .ck-content .h1,
+.ck-content h2,
+.ck-content .h2,
+.ck-content h3,
+.ck-content .h3,
+.ck-content h4,
+.ck-content .h4,
+.ck-content h5,
+.ck-content .h5,
+.ck-content h6,
+.ck-content .h6,
+.ck-content .form-wrapper.accordion .accordion-item h2,
+.ck-content .form-wrapper.accordion .accordion-item .h2 {
   font-weight: 700;
   color: #283747;
 }
-.ck-content h1 a, .ck-content .h1 a, .ck-content h2 a, .ck-content .h2 a, .ck-content h3 a, .ck-content .h3 a, .ck-content h4 a, .ck-content .h4 a, .ck-content h5 a, .ck-content .h5 a, .ck-content h6 a, .ck-content .h6 a, .ck-content .form-wrapper.accordion .accordion-item h2 a, .ck-content .form-wrapper.accordion .accordion-item .h2 a {
+.ck-content h1 a, .ck-content .h1 a,
+.ck-content h2 a,
+.ck-content .h2 a,
+.ck-content h3 a,
+.ck-content .h3 a,
+.ck-content h4 a,
+.ck-content .h4 a,
+.ck-content h5 a,
+.ck-content .h5 a,
+.ck-content h6 a,
+.ck-content .h6 a,
+.ck-content .form-wrapper.accordion .accordion-item h2 a,
+.ck-content .form-wrapper.accordion .accordion-item .h2 a {
   color: inherit;
 }
 .ck-content h1, .ck-content .h1 {
@@ -11214,7 +11248,8 @@ a > .ck-content code {
   line-height: 26px;
   color: #555;
 }
-.ck-content input, .ck-content textarea {
+.ck-content input,
+.ck-content textarea {
   width: 100%;
   border-radius: 10px;
   background: #fff;
@@ -11226,10 +11261,12 @@ a > .ck-content code {
   transition: all 0.3s ease-out 0s;
   border: 1px solid transparent;
 }
-.ck-content input::placeholder, .ck-content textarea::placeholder {
+.ck-content input::placeholder,
+.ck-content textarea::placeholder {
   opacity: 1;
 }
-.ck-content input:focus, .ck-content textarea:focus {
+.ck-content input:focus,
+.ck-content textarea:focus {
   border-color: #ff851b;
 }
 .ck-content .back-to-top {
@@ -11615,7 +11652,8 @@ a > .ck-content code {
   padding-left: 5px;
   transition: all 0.3s ease-out 0s;
 }
-.ck-content .welcome-area .welcome-content .content a:hover, .ck-content .welcome-area .welcome-content .content a i {
+.ck-content .welcome-area .welcome-content .content a:hover,
+.ck-content .welcome-area .welcome-content .content a i {
   padding-left: 20px;
 }
 .ck-content .last-news-area h2, .ck-content .last-news-area .h2 {
@@ -11732,21 +11770,26 @@ a > .ck-content code {
   position: relative;
   z-index: 1;
 }
-.ck-content .map-area path {
+.ck-content .map-area #svg-map {
+  width: 100%;
+  height: auto;
+}
+.ck-content .map-area #svg-map path {
   stroke: #283747;
   stroke-width: 0.5;
   fill: #f6f6f6;
   transition-duration: 200ms;
   cursor: pointer;
 }
-.ck-content .map-area path:hover {
+.ck-content .map-area #svg-map path:hover {
   fill: #ff851b;
 }
 .ck-content .map-area #region-tooltip {
   opacity: 0;
-  position: absolute;
-  background-color: black;
-  color: white;
+  display: inline-block;
+  background-color: #283747;
+  color: #fff;
+  padding: 5px;
 }
 .ck-content .contact-area {
   background: #f6f6f6;
@@ -11782,10 +11825,12 @@ a > .ck-content code {
   font-weight: 500;
   margin-bottom: 20px;
 }
-.ck-content .contact-area .contact-form form input::placeholder, .ck-content .contact-area .contact-form form textarea::placeholder {
+.ck-content .contact-area .contact-form form input::placeholder,
+.ck-content .contact-area .contact-form form textarea::placeholder {
   opacity: 1;
 }
-.ck-content .contact-area .contact-form form input:focus, .ck-content .contact-area .contact-form form textarea:focus {
+.ck-content .contact-area .contact-form form input:focus,
+.ck-content .contact-area .contact-form form textarea:focus {
   border-color: #ff851b;
 }
 .ck-content .contact-area .contact-form form input[type=submit] {

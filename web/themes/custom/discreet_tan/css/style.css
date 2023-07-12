@@ -12001,7 +12001,10 @@ img {
   max-width: 100%;
 }
 
-a:focus, input:focus, textarea:focus, button:focus {
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
   text-decoration: none;
   outline: none;
 }
@@ -12010,7 +12013,9 @@ a:hover {
   text-decoration: none;
 }
 
-i, span, a {
+i,
+span,
+a {
   display: inline-block;
   text-decoration: none;
 }
@@ -12019,16 +12024,45 @@ a {
   transition: all 0.3s ease-out 0s;
 }
 
-audio, canvas, iframe, img, svg, video {
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
   vertical-align: middle;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .form-wrapper.accordion .accordion-item h2, .form-wrapper.accordion .accordion-item .h2 {
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+.form-wrapper.accordion .accordion-item h2,
+.form-wrapper.accordion .accordion-item .h2 {
   font-weight: 700;
   color: #283747;
 }
 
-h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a, h6 a, .h6 a, .form-wrapper.accordion .accordion-item h2 a, .form-wrapper.accordion .accordion-item .h2 a {
+h1 a, .h1 a,
+h2 a,
+.h2 a,
+h3 a,
+.h3 a,
+h4 a,
+.h4 a,
+h5 a,
+.h5 a,
+h6 a,
+.h6 a,
+.form-wrapper.accordion .accordion-item h2 a,
+.form-wrapper.accordion .accordion-item .h2 a {
   color: inherit;
 }
 
@@ -12068,7 +12102,8 @@ p {
   color: #555;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   border-radius: 10px;
   background: #fff;
@@ -12080,10 +12115,12 @@ input, textarea {
   transition: all 0.3s ease-out 0s;
   border: 1px solid transparent;
 }
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   opacity: 1;
 }
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border-color: #ff851b;
 }
 
@@ -12483,7 +12520,8 @@ body.path-frontpage #main-content {
   padding-left: 5px;
   transition: all 0.3s ease-out 0s;
 }
-.welcome-area .welcome-content .content a:hover, .welcome-area .welcome-content .content a i {
+.welcome-area .welcome-content .content a:hover,
+.welcome-area .welcome-content .content a i {
   padding-left: 20px;
 }
 
@@ -12606,21 +12644,26 @@ body.path-frontpage #main-content {
   z-index: 1;
 }
 
-.map-area path {
+.map-area #svg-map {
+  width: 100%;
+  height: auto;
+}
+.map-area #svg-map path {
   stroke: #283747;
   stroke-width: 0.5;
   fill: #f6f6f6;
   transition-duration: 200ms;
   cursor: pointer;
 }
-.map-area path:hover {
+.map-area #svg-map path:hover {
   fill: #ff851b;
 }
 .map-area #region-tooltip {
   opacity: 0;
-  position: absolute;
-  background-color: black;
-  color: white;
+  display: inline-block;
+  background-color: #283747;
+  color: #fff;
+  padding: 5px;
 }
 
 .contact-area {
@@ -12657,10 +12700,12 @@ body.path-frontpage #main-content {
   font-weight: 500;
   margin-bottom: 20px;
 }
-.contact-area .contact-form form input::placeholder, .contact-area .contact-form form textarea::placeholder {
+.contact-area .contact-form form input::placeholder,
+.contact-area .contact-form form textarea::placeholder {
   opacity: 1;
 }
-.contact-area .contact-form form input:focus, .contact-area .contact-form form textarea:focus {
+.contact-area .contact-form form input:focus,
+.contact-area .contact-form form textarea:focus {
   border-color: #ff851b;
 }
 .contact-area .contact-form form input[type=submit] {

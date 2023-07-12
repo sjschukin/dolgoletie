@@ -19,7 +19,10 @@ img {
   max-width: 100%;
 }
 
-a, input, textarea, button {
+a,
+input,
+textarea,
+button {
   &:focus {
     text-decoration: none;
     outline: none;
@@ -30,7 +33,9 @@ a:hover {
   text-decoration: none;
 }
 
-i, span, a {
+i,
+span,
+a {
   display: inline-block;
   text-decoration: none;
 }
@@ -39,16 +44,31 @@ a {
   transition: all 0.3s ease-out 0s;
 }
 
-audio, canvas, iframe, img, svg, video {
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
   vertical-align: middle;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   color: $basic-dark-color;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   a {
     color: inherit;
   }
@@ -89,7 +109,8 @@ p {
   color: $basic-text-color;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   border-radius: 10px;
   background: $basic-white-color;
@@ -542,7 +563,8 @@ body.path-frontpage #main-content {
         transition: all 0.3s ease-out 0s;
       }
 
-      &:hover, i {
+      &:hover,
+      i {
         padding-left: 20px;
       }
     }
@@ -696,23 +718,30 @@ body.path-frontpage #main-content {
 
 // map *********************************************************************
 .map-area {
-  path {
-    stroke: $basic-dark-color;
-    stroke-width: 0.5;
-    fill: $basic-smoke-white-color;
-    transition-duration: 200ms;
-    cursor: pointer;
 
-    &:hover {
-      fill: $basic-orange-color;
+  #svg-map {
+    width: 100%;
+    height: auto;
+
+    path {
+      stroke: $basic-dark-color;
+      stroke-width: 0.5;
+      fill: $basic-smoke-white-color;
+      transition-duration: 200ms;
+      cursor: pointer;
+
+      &:hover {
+        fill: $basic-orange-color;
+      }
     }
   }
 
   #region-tooltip {
     opacity: 0;
-    position: absolute;
-    background-color: black;
-    color: white;
+    display: inline-block;
+    background-color: $basic-dark-color;
+    color: $basic-white-color;
+    padding: 5px;
   }
 }
 
@@ -759,11 +788,14 @@ body.path-frontpage #main-content {
   }
 
   .contact-form form {
-    input::placeholder, textarea::placeholder {
+
+    input::placeholder,
+    textarea::placeholder {
       opacity: 1;
     }
 
-    input:focus, textarea:focus {
+    input:focus,
+    textarea:focus {
       border-color: $basic-orange-color;
     }
 
