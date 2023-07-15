@@ -819,3 +819,13 @@ body.path-frontpage #main-content {
 #block-discreet-tan-page-title {
   margin-top: 80px;
 }
+
+// future-events **************************************************************
+.view-future-events {
+  .table {
+    tr td:last-child p {
+      font-size: 22px;
+      font-weight: 700;
+    }
+  }
+}
