@@ -12663,7 +12663,8 @@ body.path-frontpage #main-content {
   display: inline-block;
   background-color: #283747;
   color: #fff;
-  padding: 5px;
+  padding: 5px 20px;
+  font-size: 24px;
 }
 
 .contact-area {
