@@ -730,19 +730,15 @@ body.path-frontpage #main-content {
       transition-duration: 200ms;
       cursor: pointer;
 
-      &:hover {
+      &.active {
         fill: $basic-orange-color;
       }
     }
-  }
 
-  #region-tooltip {
-    opacity: 0;
-    display: inline-block;
-    background-color: $basic-dark-color;
-    color: $basic-white-color;
-    padding: 5px 20px;
-    font-size: 24px;
+    text {
+      stroke: $basic-dark-color;
+      cursor: pointer;
+    }
   }
 }
 

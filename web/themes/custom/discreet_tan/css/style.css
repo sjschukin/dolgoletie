@@ -12655,16 +12655,12 @@ body.path-frontpage #main-content {
   transition-duration: 200ms;
   cursor: pointer;
 }
-.map-area #svg-map path:hover {
+.map-area #svg-map path.active {
   fill: #ff851b;
 }
-.map-area #region-tooltip {
-  opacity: 0;
-  display: inline-block;
-  background-color: #283747;
-  color: #fff;
-  padding: 5px 20px;
-  font-size: 24px;
+.map-area #svg-map text {
+  stroke: #283747;
+  cursor: pointer;
 }
 
 .contact-area {

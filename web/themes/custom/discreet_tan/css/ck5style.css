@@ -11781,16 +11781,12 @@ a > .ck-content code {
   transition-duration: 200ms;
   cursor: pointer;
 }
-.ck-content .map-area #svg-map path:hover {
+.ck-content .map-area #svg-map path.active {
   fill: #ff851b;
 }
-.ck-content .map-area #region-tooltip {
-  opacity: 0;
-  display: inline-block;
-  background-color: #283747;
-  color: #fff;
-  padding: 5px 20px;
-  font-size: 24px;
+.ck-content .map-area #svg-map text {
+  stroke: #283747;
+  cursor: pointer;
 }
 .ck-content .contact-area {
   background: #f6f6f6;
