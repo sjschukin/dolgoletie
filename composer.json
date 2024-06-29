@@ -19,13 +19,14 @@
         "drupal/admin_toolbar": "^3.4",
         "drupal/bootstrap5": "^3.0",
         "drupal/contact_block": "^2.0",
+        "drupal/core": "^10",
         "drupal/core-composer-scaffold": "^10.0",
         "drupal/core-project-message": "^10.0",
         "drupal/core-recommended": "^10.0",
         "drupal/pathauto": "^1.11",
         "drupal/transliterate_filenames": "^2.0",
         "drupal/views_bootstrap": "^5.5@alpha",
-        "drush/drush": "^11.5"
+        "drush/drush": "^12.5"
     },
     "conflict": {
         "drupal/drupal": "*"
