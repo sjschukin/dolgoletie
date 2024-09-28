@@ -60,6 +60,10 @@ AddEncoding gzip svgz
 <IfModule mod_rewrite.c>
   RewriteEngine on
 
+  # Redirect from HTTP to HTTPS (https://www.reg.ru/support/hosting-i-servery/kak-dobavit-redirekt/redirekt-cherez-htaccess)
+  RewriteCond %{SERVER_PORT} !^443$
+  RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+
   # Set "protossl" to "s" if we were accessed via https://.  This is used later
   # if you enable "www." stripping or enforcement, in order to ensure that
   # you don't bounce between http and https.
