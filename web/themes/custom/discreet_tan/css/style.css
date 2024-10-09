@@ -13674,7 +13674,6 @@ body.path-frontpage #main-content {
 }
 
 .skill-area {
-  padding-top: 170px;
   position: relative;
   z-index: 1;
 }
@@ -13725,7 +13724,7 @@ body.path-frontpage #main-content {
   margin-bottom: 30px;
   background: #fff;
   transition: all 0.3s ease-out 0s;
-  box-shadow: 0px 0px 61px rgba(85, 85, 85, 0.1);
+  box-shadow: 0px 0px 30px rgba(85, 85, 85, 0.1);
 }
 .course-area-view .single-course:hover, .course-area .single-course:hover {
   box-shadow: 0px 15px 61px rgba(85, 85, 85, 0.8);
@@ -13766,7 +13765,6 @@ body.path-frontpage #main-content {
 }
 
 .course-area {
-  padding-top: 170px;
   position: relative;
   z-index: 1;
 }

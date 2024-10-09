@@ -598,7 +598,6 @@ body.path-frontpage #main-content {
 
 // skill **********************************************************************
 .skill-area {
-  padding-top: 170px;
   position: relative;
   z-index: 1;
 
@@ -659,7 +658,7 @@ body.path-frontpage #main-content {
     margin-bottom: 30px;
     background: $basic-white-color;
     transition: all 0.3s ease-out 0s;
-    box-shadow: 0px 0px 61px $basic-second-shadow-color;
+    box-shadow: 0px 0px 30px $basic-second-shadow-color;
 
     &:hover {
       box-shadow: 0px 15px 61px $basic-second-shadow-hover-color;
@@ -706,7 +705,6 @@ body.path-frontpage #main-content {
 }
 
 .course-area {
-  padding-top: 170px;
   position: relative;
   z-index: 1;
 
