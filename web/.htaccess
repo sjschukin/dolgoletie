@@ -188,3 +188,8 @@ AddEncoding gzip svgz
   # Disable Proxy header, since it's an attack vector.
   RequestHeader unset Proxy
 </IfModule>
+
+# Redirect from old address
+RewriteCond %{HTTP_HOST} ^dolgoletie\.ryazanszn\.ru$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.dolgoletie\.ryazanszn\.ru$
+RewriteRule ^/?$ "https\:\/\/xn\-\-\-62\-5cdkhggda0agstb0ardc3en\.xn\-\-p1ai\/" [R=301,L]
