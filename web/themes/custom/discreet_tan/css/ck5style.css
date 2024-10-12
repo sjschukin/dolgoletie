@@ -12424,7 +12424,7 @@ a > .ck-content code {
     margin-right: 0;
   }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
   .ck-content .navbar-nav .nav-item {
     margin: 0;
   }
@@ -12814,5 +12814,10 @@ a > .ck-content code {
 .ck-content .view-future-events .table tr td:last-child p {
   font-size: 22px;
   font-weight: 700;
+}
+.ck-content .price {
+  font-size: 22px;
+  font-weight: 700;
+  white-space: nowrap;
 }
 /*# sourceMappingURL=ck5style.css.map */

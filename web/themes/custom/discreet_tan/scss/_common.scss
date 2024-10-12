@@ -347,7 +347,7 @@ body.path-frontpage #main-content {
       margin-right: 0;
     }
 
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(md) {
       margin: 0;
     }
 
@@ -840,4 +840,10 @@ body.path-frontpage #main-content {
       font-weight: 700;
     }
   }
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 700;
+  white-space: nowrap;
 }
