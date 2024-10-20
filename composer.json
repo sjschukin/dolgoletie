@@ -27,7 +27,8 @@
         "drupal/feeds_ex": "^1.0@beta",
         "drupal/pathauto": "^1.11",
         "drupal/transliterate_filenames": "^2.0",
-        "drupal/views_bootstrap": "^5.5@alpha",
+        "drupal/views_bootstrap": "^5.5@RC",
+        "drupal/webform": "^6.2",
         "drush/drush": "^12.5"
     },
     "conflict": {
