@@ -12808,6 +12808,14 @@ a > .ck-content code {
   text-align: center;
   font-weight: 300;
 }
+.ck-content #block-social-networks-block {
+  margin: 1rem 0;
+  text-align: center;
+}
+.ck-content #block-social-networks-block img {
+  width: 48px;
+  height: 48px;
+}
 .ck-content #block-discreet-tan-page-title {
   margin-top: 80px;
 }

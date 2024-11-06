@@ -827,6 +827,16 @@ body.path-frontpage #main-content {
   }
 }
 
+#block-social-networks-block {
+  margin: 1rem 0;
+  text-align: center;
+
+  img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
 // page ***********************************************************************
 #block-discreet-tan-page-title {
   margin-top: 80px;
