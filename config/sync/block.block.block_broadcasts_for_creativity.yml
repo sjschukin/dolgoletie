@@ -1,0 +1,29 @@
+uuid: 98b3c641-967f-4e36-80f5-47406b63c7a1
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.broadcasts
+  module:
+    - system
+    - views
+  theme:
+    - discreet_tan
+id: block_broadcasts_for_creativity
+theme: discreet_tan
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:broadcasts-block_3'
+settings:
+  id: 'views_block:broadcasts-block_3'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /activities/lessons-for-creativity

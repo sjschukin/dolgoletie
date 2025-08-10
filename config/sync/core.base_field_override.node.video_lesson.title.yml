@@ -1,0 +1,18 @@
+uuid: d2c9b312-659f-4c3e-b949-196e95ebc3b3
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.video_lesson
+id: node.video_lesson.title
+field_name: title
+entity_type: node
+bundle: video_lesson
+label: Наименование
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

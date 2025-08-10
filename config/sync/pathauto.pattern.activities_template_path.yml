@@ -1,0 +1,22 @@
+uuid: 9ac14846-d0f4-4deb-a72c-026819c31227
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: activities_template_path
+label: Активности
+type: 'canonical_entities:node'
+pattern: 'activities/[node:title]'
+selection_criteria:
+  e4760c1b-d56c-4a4f-8341-cfc6997cf756:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: e4760c1b-d56c-4a4f-8341-cfc6997cf756
+    context_mapping:
+      node: node
+    bundles:
+      activity: activity
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,22 @@
+uuid: c477807d-bc9a-41ee-82fe-10064c772940
+langcode: ru
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - discreet_tan
+_core:
+  default_config_hash: PMXTl6DAid9q2u0hJcpJBmsEiUYB4FMMeZF6pcqaJDE
+id: discreet_tan_help
+theme: discreet_tan
+region: content
+weight: -10
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Справка
+  label_display: '0'
+  provider: help
+visibility: {  }

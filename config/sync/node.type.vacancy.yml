@@ -1,0 +1,17 @@
+uuid: aedb42e3-7c6c-4fd6-9ab3-112dd9b4dd16
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Вакансия
+type: vacancy
+description: 'Вакансия для трудоустройства граждан'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

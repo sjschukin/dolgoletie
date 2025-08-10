@@ -1,0 +1,27 @@
+uuid: 52cca350-f260-4751-b881-9368db510d81
+langcode: ru
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.video_broadcast.field_activity_type
+    - field.field.node.video_broadcast.field_broadcast_link
+    - field.field.node.video_broadcast.field_start_date
+    - node.type.video_broadcast
+  module:
+    - user
+id: node.video_broadcast.teaser
+targetEntityType: node
+bundle: video_broadcast
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_activity_type: true
+  field_broadcast_link: true
+  field_start_date: true
+  langcode: true

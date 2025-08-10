@@ -1,0 +1,30 @@
+uuid: 6c2e0217-0b47-410b-8b48-6e55ba675956
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:54de4ae4-56b6-418b-9a3d-6a1af081b81a'
+  module:
+    - block_content
+    - system
+  theme:
+    - discreet_tan
+id: frontpage_welcome
+theme: discreet_tan
+region: content
+weight: -1
+provider: null
+plugin: 'block_content:54de4ae4-56b6-418b-9a3d-6a1af081b81a'
+settings:
+  id: 'block_content:54de4ae4-56b6-418b-9a3d-6a1af081b81a'
+  label: frontpage-welcome
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

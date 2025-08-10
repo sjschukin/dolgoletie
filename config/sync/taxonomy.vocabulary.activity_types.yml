@@ -1,0 +1,9 @@
+uuid: b4466001-3e48-42fc-89f4-5d3d31d9dae7
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Типы активностей'
+vid: activity_types
+description: null
+weight: 0
+new_revision: false

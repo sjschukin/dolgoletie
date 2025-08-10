@@ -1,0 +1,25 @@
+uuid: 1b33f54d-810e-45f8-b90d-ede7eb902117
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a932f0e6-f0cc-4ee9-a794-db8b2218dfdf'
+  module:
+    - block_content
+  theme:
+    - discreet_tan
+id: copyright
+theme: discreet_tan
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:a932f0e6-f0cc-4ee9-a794-db8b2218dfdf'
+settings:
+  id: 'block_content:a932f0e6-f0cc-4ee9-a794-db8b2218dfdf'
+  label: Copyright
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

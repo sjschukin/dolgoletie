@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: ru
+uuid: bda5137b-4a3c-4b7d-9f71-6636f5f55cab
+name: 'Активное Долголетие'
+mail: dolgoletie62@ya.ru
+slogan: 'Активное Долголетие – «Здоровая Рязань»'
+page:
+  403: ''
+  404: ''
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: ru
+mail_notification: ''

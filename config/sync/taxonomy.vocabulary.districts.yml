@@ -1,0 +1,9 @@
+uuid: 539bde8d-7210-4531-9722-fef648a056e4
+langcode: ru
+status: true
+dependencies: {  }
+name: Районы
+vid: districts
+description: null
+weight: 0
+new_revision: false

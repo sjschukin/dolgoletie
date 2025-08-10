@@ -1,0 +1,11 @@
+uuid: 7cb7fcc1-e762-45ed-ba0b-c7370c163c55
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.video_broadcast
+id: node.video_broadcast
+target_entity_type_id: node
+target_bundle: video_broadcast
+default_langcode: site_default
+language_alterable: false

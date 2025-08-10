@@ -1,0 +1,17 @@
+uuid: 3bcfc479-5707-44d1-b0d8-24329b23ffb5
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Новость
+type: news
+description: 'Новости, отображаемые в порядке, зависимом от времени публикации'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: true

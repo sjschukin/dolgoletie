@@ -1,0 +1,29 @@
+uuid: dbd30c79-f8d9-427f-83e8-1885c54ebbb7
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.broadcasts
+  module:
+    - system
+    - views
+  theme:
+    - discreet_tan
+id: block_broadcasts_for_health
+theme: discreet_tan
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:broadcasts-block_1'
+settings:
+  id: 'views_block:broadcasts-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /activities/lessons-for-health

@@ -1,0 +1,24 @@
+uuid: 0806d176-1790-47cb-a637-4ed38c978a92
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_html
+    - filter.format.html_video
+    - node.type.video_lesson
+  module:
+    - text
+id: node.video_lesson.field_video_html
+field_name: field_video_html
+entity_type: node
+bundle: video_lesson
+label: 'HTML-код видео'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - html_video
+field_type: text_long

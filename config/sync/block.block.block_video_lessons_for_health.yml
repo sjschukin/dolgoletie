@@ -1,0 +1,29 @@
+uuid: b0e4d858-f526-420f-84d8-7b3dbe864dcf
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.video_lessons
+  module:
+    - system
+    - views
+  theme:
+    - discreet_tan
+id: block_video_lessons_for_health
+theme: discreet_tan
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:video_lessons-block_1'
+settings:
+  id: 'views_block:video_lessons-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /activities/lessons-for-health

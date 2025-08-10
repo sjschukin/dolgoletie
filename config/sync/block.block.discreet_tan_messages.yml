@@ -1,0 +1,22 @@
+uuid: 168c74b6-d6f3-4db3-ab99-53a29250faab
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - discreet_tan
+_core:
+  default_config_hash: '--UD9NcFSVYHPPbF79vXPuiI5irRfeUumv-SVx9B47I'
+id: discreet_tan_messages
+theme: discreet_tan
+region: content
+weight: -13
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Сообщения
+  label_display: '0'
+  provider: system
+visibility: {  }

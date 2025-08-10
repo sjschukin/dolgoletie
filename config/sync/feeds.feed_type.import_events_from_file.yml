@@ -1,0 +1,173 @@
+uuid: d13b32ec-c00a-4277-9e66-eba806c2562e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.event.title
+    - field.field.node.event.field_description
+    - field.field.node.event.field_display_date_before
+    - field.field.node.event.field_district
+    - field.field.node.event.field_event_type
+    - field.field.node.event.field_location_text
+    - field.field.node.event.field_mapping_id
+    - field.field.node.event.field_start_date
+    - node.type.event
+  module:
+    - feeds_ex
+    - feeds_log
+    - node
+third_party_settings:
+  feeds_log:
+    status: true
+    operations:
+      created: created
+      updated: updated
+      deleted: deleted
+      skipped: skipped
+      failed: failed
+      cleaned: cleaned
+    items:
+      created: created
+      updated: updated
+      deleted: deleted
+      skipped: skipped
+      failed: failed
+    source: true
+label: 'Импорт мероприятий из файла'
+id: import_events_from_file
+description: ''
+help: ''
+import_period: -1
+fetcher: http
+fetcher_configuration:
+  auto_detect_feeds: false
+  use_pubsubhubbub: false
+  always_download: true
+  fallback_hub: ''
+  request_timeout: 30
+parser: jsonpathlines
+parser_configuration:
+  context:
+    value: null
+  source_encoding:
+    - auto
+  display_errors: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: event
+  langcode: ru
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  skip_validation: false
+  skip_validation_types: {  }
+  authorize: false
+  revision: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 3
+custom_sources:
+  id:
+    value: '$[*].id'
+    label: '$[*].id'
+    machine_name: id
+    type: json
+  title:
+    value: '$[*].title'
+    label: '$[*].title'
+    machine_name: title
+    type: json
+  eventtypeid:
+    value: '$[*].eventTypeId'
+    label: '$[*].eventTypeId'
+    machine_name: eventtypeid
+    type: json
+  districtid:
+    value: '$[*].districtId'
+    label: '$[*].districtId'
+    machine_name: districtid
+    type: json
+  location:
+    value: '$[*].location'
+    label: '$[*].location'
+    machine_name: location
+    type: json
+  description:
+    value: '$[*].description'
+    label: '$[*].description'
+    machine_name: description
+    type: json
+  startdate:
+    value: '$[*].startDate'
+    label: '$[*].startDate'
+    machine_name: startdate
+    type: json
+  displaydatebefore:
+    value: '$[*].displayDateBefore'
+    label: '$[*].displayDateBefore'
+    machine_name: displaydatebefore
+    type: json
+mappings:
+  -
+    target: field_mapping_id
+    map:
+      value: id
+    settings:
+      language: null
+    unique:
+      value: 1
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_event_type
+    map:
+      target_id: eventtypeid
+    settings:
+      language: ''
+      reference_by: field_mapping_id
+      autocreate: 0
+      autocreate_bundle: event_types
+  -
+    target: field_district
+    map:
+      target_id: districtid
+    settings:
+      language: ''
+      reference_by: field_mapping_id
+      autocreate: 0
+      autocreate_bundle: districts
+  -
+    target: field_location_text
+    map:
+      value: location
+    settings:
+      language: null
+  -
+    target: field_description
+    map:
+      value: description
+    settings:
+      language: ''
+      format: plain_text
+  -
+    target: field_start_date
+    map:
+      value: startdate
+    settings:
+      language: ''
+      timezone: Europe/Moscow
+  -
+    target: field_display_date_before
+    map:
+      value: displaydatebefore
+    settings:
+      language: ''
+      timezone: Europe/Moscow

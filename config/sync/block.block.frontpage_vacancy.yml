@@ -1,0 +1,30 @@
+uuid: 4405d2e5-5d02-4184-bceb-202a71e186aa
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:de472233-672d-4ca5-9f15-0ccecb989609'
+  module:
+    - block_content
+    - system
+  theme:
+    - discreet_tan
+id: frontpage_vacancy
+theme: discreet_tan
+region: content
+weight: 3
+provider: null
+plugin: 'block_content:de472233-672d-4ca5-9f15-0ccecb989609'
+settings:
+  id: 'block_content:de472233-672d-4ca5-9f15-0ccecb989609'
+  label: frontpage-vacancy
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

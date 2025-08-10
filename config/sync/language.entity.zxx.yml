@@ -1,0 +1,11 @@
+uuid: 506d9b04-9400-41b3-8f4f-b7ceaef65cee
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 35CefWbnzaiytcg3acexxz_GTvuwIjYd_ZTcmmR-tXA
+id: zxx
+label: 'Не применимо'
+direction: ltr
+weight: 3
+locked: true

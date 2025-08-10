@@ -1,0 +1,17 @@
+uuid: b1ccb3d0-c60d-48e6-8f7b-5272e17e5163
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Мероприятие
+type: event
+description: 'Мероприятие, проходящее в определенном месте в определенное время'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

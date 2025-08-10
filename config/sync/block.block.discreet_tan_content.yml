@@ -1,0 +1,26 @@
+uuid: 56a19e19-f2b6-4752-8adb-8b506f2db900
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - discreet_tan
+_core:
+  default_config_hash: L4VkhVLY5ppQUx2UpUFVoX4VtOz_KdOZz0TYdCFEBCE
+id: discreet_tan_content
+theme: discreet_tan
+region: content
+weight: -8
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Содержимое страницы'
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

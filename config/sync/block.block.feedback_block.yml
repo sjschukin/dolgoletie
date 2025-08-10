@@ -1,0 +1,29 @@
+uuid: c5f7ca95-ebde-4c52-a93f-21193256741d
+langcode: ru
+status: false
+dependencies:
+  config:
+    - contact.form.feedback
+  module:
+    - contact_block
+    - system
+  theme:
+    - discreet_tan
+id: feedback_block
+theme: discreet_tan
+region: content
+weight: 6
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'Обратная связь'
+  label_display: '0'
+  provider: contact_block
+  contact_form: feedback
+  form_display: default
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

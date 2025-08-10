@@ -1,0 +1,29 @@
+uuid: 20932840-74dc-471e-b23f-3949a1b7b825
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.video_lessons
+  module:
+    - system
+    - views
+  theme:
+    - discreet_tan
+id: block_video_lessons_for_mind
+theme: discreet_tan
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:video_lessons-block_2'
+settings:
+  id: 'views_block:video_lessons-block_2'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /activities/lessons-for-mind

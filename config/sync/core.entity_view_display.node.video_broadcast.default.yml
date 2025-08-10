@@ -1,0 +1,54 @@
+uuid: 43e690c2-b000-4622-8cef-8e1f59c27c21
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.video_broadcast.field_activity_type
+    - field.field.node.video_broadcast.field_broadcast_link
+    - field.field.node.video_broadcast.field_start_date
+    - node.type.video_broadcast
+  module:
+    - datetime
+    - link
+    - user
+id: node.video_broadcast.default
+targetEntityType: node
+bundle: video_broadcast
+mode: default
+content:
+  field_activity_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_broadcast_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_start_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: short
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

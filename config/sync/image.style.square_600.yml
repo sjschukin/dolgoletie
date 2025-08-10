@@ -1,0 +1,15 @@
+uuid: 174562e8-0e02-451c-a6a3-6b03fac789f1
+langcode: ru
+status: true
+dependencies: {  }
+name: square_600
+label: Square_600
+effects:
+  8f036671-1936-486e-8a0e-a6186329ab6f:
+    uuid: 8f036671-1936-486e-8a0e-a6186329ab6f
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 600
+      anchor: center-center

@@ -1,0 +1,31 @@
+uuid: 81e677f4-1825-4780-9652-ef29c90f078f
+langcode: ru
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.vacancy.field_addres
+    - field.field.node.vacancy.field_district
+    - field.field.node.vacancy.field_org_name
+    - field.field.node.vacancy.field_phone_number
+    - field.field.node.vacancy.field_salary
+    - node.type.vacancy
+  module:
+    - user
+id: node.vacancy.teaser
+targetEntityType: node
+bundle: vacancy
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_addres: true
+  field_district: true
+  field_org_name: true
+  field_phone_number: true
+  field_salary: true
+  langcode: true

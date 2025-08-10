@@ -1,0 +1,29 @@
+uuid: 61f89222-9900-484b-b322-111f0a42e9b1
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - system
+    - views
+  theme:
+    - discreet_tan
+id: last_news_block
+theme: discreet_tan
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:news-block_1'
+settings:
+  id: 'views_block:news-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,27 @@
+uuid: ba1b845d-db7e-49aa-8f9b-08dabed79669
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - discreet_tan
+_core:
+  default_config_hash: VVfEnDiffupah8AEE0fav-_W3j7YTB7dLuUXzwRZsdE
+id: discreet_tan_main_navigation
+theme: discreet_tan
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Основная навигация'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

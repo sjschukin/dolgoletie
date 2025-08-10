@@ -1,0 +1,30 @@
+uuid: f556ba31-8e4a-40a4-a3b1-5312e5379f02
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e71b6fda-c10c-4847-afd8-9034cfc9c597'
+  module:
+    - block_content
+    - system
+  theme:
+    - discreet_tan
+id: frontpage_courses
+theme: discreet_tan
+region: content
+weight: 2
+provider: null
+plugin: 'block_content:e71b6fda-c10c-4847-afd8-9034cfc9c597'
+settings:
+  id: 'block_content:e71b6fda-c10c-4847-afd8-9034cfc9c597'
+  label: frontpage-courses
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

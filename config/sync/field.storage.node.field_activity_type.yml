@@ -1,0 +1,20 @@
+uuid: 13671d95-a6b2-4e99-ad41-c52ae4368aea
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_activity_type
+field_name: field_activity_type
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

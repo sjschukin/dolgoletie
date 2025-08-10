@@ -1,0 +1,13 @@
+uuid: fd396a29-5a0d-484a-b0f9-816147add963
+langcode: ru
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: '-PPKjsNQPvoIDjOuUAvlLocYD976MNjb9Zpgyz5_BWE'
+id: taxonomy_term.full
+label: 'Страница термина таксономии'
+description: ''
+targetEntityType: taxonomy_term
+cache: true

@@ -1,0 +1,66 @@
+uuid: 9bc484da-e812-4e2c-92ec-bd4b34509f0d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.vacancy.field_addres
+    - field.field.node.vacancy.field_district
+    - field.field.node.vacancy.field_org_name
+    - field.field.node.vacancy.field_phone_number
+    - field.field.node.vacancy.field_salary
+    - node.type.vacancy
+  module:
+    - user
+id: node.vacancy.default
+targetEntityType: node
+bundle: vacancy
+mode: default
+content:
+  field_addres:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_district:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_org_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_phone_number:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_salary:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ' '
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

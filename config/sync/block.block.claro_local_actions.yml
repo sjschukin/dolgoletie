@@ -1,0 +1,20 @@
+uuid: 95978b3a-c82d-4d1f-8d0c-0f77dfb3fb76
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - claro
+_core:
+  default_config_hash: CdXfDmRgAvms7EQovxxWPdYi0GitxeRbVtScYK16ZH0
+id: claro_local_actions
+theme: claro
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Основные действия администратора'
+  label_display: '0'
+  provider: core
+visibility: {  }

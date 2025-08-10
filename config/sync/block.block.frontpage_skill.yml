@@ -1,0 +1,30 @@
+uuid: 37bcc9a1-e5de-4aa6-9833-c97da75e636b
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7ec0143e-a3d6-4bb6-b791-2d627e5a8b7c'
+  module:
+    - block_content
+    - system
+  theme:
+    - discreet_tan
+id: frontpage_skill
+theme: discreet_tan
+region: content
+weight: 1
+provider: null
+plugin: 'block_content:7ec0143e-a3d6-4bb6-b791-2d627e5a8b7c'
+settings:
+  id: 'block_content:7ec0143e-a3d6-4bb6-b791-2d627e5a8b7c'
+  label: frontpage-skill
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

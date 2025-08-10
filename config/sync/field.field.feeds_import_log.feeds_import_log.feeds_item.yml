@@ -1,0 +1,23 @@
+uuid: 3b21774e-ce3b-49ec-b7c2-c140fb1a5915
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.feeds_import_log.feeds_item
+  module:
+    - feeds
+    - feeds_log
+id: feeds_import_log.feeds_import_log.feeds_item
+field_name: feeds_item
+entity_type: feeds_import_log
+bundle: feeds_import_log
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

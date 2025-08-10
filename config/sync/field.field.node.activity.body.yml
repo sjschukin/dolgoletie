@@ -1,0 +1,23 @@
+uuid: 79cab3be-a1f4-4f6a-a289-14da03d638bf
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.activity
+  module:
+    - text
+id: node.activity.body
+field_name: body
+entity_type: node
+bundle: activity
+label: Описание
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

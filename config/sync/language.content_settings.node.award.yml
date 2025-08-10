@@ -1,0 +1,11 @@
+uuid: 4f174376-6bb2-4145-844b-f1c6fc3e04de
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.award
+id: node.award
+target_entity_type_id: node
+target_bundle: award
+default_langcode: site_default
+language_alterable: false

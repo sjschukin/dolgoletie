@@ -1,0 +1,11 @@
+uuid: 8c903374-efbb-4ac5-a2b9-d4f45a320e32
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.activity_types
+id: taxonomy_term.activity_types
+target_entity_type_id: taxonomy_term
+target_bundle: activity_types
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,26 @@
+uuid: 2219ce66-fefa-47b2-b4c2-9ca106721a72
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - discreet_tan
+_core:
+  default_config_hash: tyoexTxVsfeCSARYK-YAdorAcc004MgM6DXrfYwuIlM
+id: discreet_tan_page_title
+theme: discreet_tan
+region: content
+weight: -12
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Заголовок страницы'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

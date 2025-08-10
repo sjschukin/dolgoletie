@@ -1,0 +1,23 @@
+uuid: 7b4d149f-201a-4058-b13b-5192f3ee964f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_mapping_id
+    - taxonomy.vocabulary.districts
+id: taxonomy_term.districts.field_mapping_id
+field_name: field_mapping_id
+entity_type: taxonomy_term
+bundle: districts
+label: 'Mapping ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

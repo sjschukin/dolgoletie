@@ -1,0 +1,25 @@
+uuid: 43545abe-085e-46ef-9e0b-2a32760b1bb8
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d974a1ab-e0e0-4361-931b-8a99e817164b'
+  module:
+    - block_content
+  theme:
+    - discreet_tan
+id: social_networks_block
+theme: discreet_tan
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:d974a1ab-e0e0-4361-931b-8a99e817164b'
+settings:
+  id: 'block_content:d974a1ab-e0e0-4361-931b-8a99e817164b'
+  label: social-networks
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

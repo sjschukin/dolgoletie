@@ -1,0 +1,9 @@
+uuid: 0a27589c-b459-4409-92f5-ee02b063654c
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Типы мероприятий'
+vid: event_types
+description: null
+weight: 0
+new_revision: false

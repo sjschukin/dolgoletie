@@ -1,0 +1,29 @@
+uuid: e459d5ce-b3e9-4b7a-9cea-7754aea84271
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_activity_type
+    - node.type.video_broadcast
+    - taxonomy.vocabulary.activity_types
+id: node.video_broadcast.field_activity_type
+field_name: field_activity_type
+entity_type: node
+bundle: video_broadcast
+label: 'Тип активности'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      activity_types: activity_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

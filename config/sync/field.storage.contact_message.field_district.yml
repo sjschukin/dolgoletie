@@ -1,0 +1,20 @@
+uuid: 39eddcb7-ec22-46c6-854f-ac0fd0e94133
+langcode: ru
+status: true
+dependencies:
+  module:
+    - contact
+    - taxonomy
+id: contact_message.field_district
+field_name: field_district
+entity_type: contact_message
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

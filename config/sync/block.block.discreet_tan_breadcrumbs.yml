@@ -1,0 +1,22 @@
+uuid: be34294e-1517-47db-99d4-a77a115482ec
+langcode: ru
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - discreet_tan
+_core:
+  default_config_hash: 41qgQHhVEm5UqwYox08KI1ovi8mSjMr5QIJja2T9-ZY
+id: discreet_tan_breadcrumbs
+theme: discreet_tan
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Строка навигации'
+  label_display: '0'
+  provider: system
+visibility: {  }

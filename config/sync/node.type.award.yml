@@ -1,0 +1,17 @@
+uuid: a032b6a6-b7d9-467a-8a96-d5e009fe592b
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Награждение
+type: award
+description: 'Для отображения в рубрике «Активное долголетие в лицах»'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,11 @@
+uuid: cea048f9-d346-4aa6-8cc7-fef4ea6291d4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.video_lesson
+id: node.video_lesson
+target_entity_type_id: node
+target_bundle: video_lesson
+default_langcode: site_default
+language_alterable: false

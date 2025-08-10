@@ -1,0 +1,23 @@
+uuid: 48e164b2-24c6-4cd4-931b-0bdf9ee13836
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_mapping_id
+    - taxonomy.vocabulary.event_types
+id: taxonomy_term.event_types.field_mapping_id
+field_name: field_mapping_id
+entity_type: taxonomy_term
+bundle: event_types
+label: 'Mapping ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

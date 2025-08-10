@@ -1,0 +1,30 @@
+uuid: 1a881f2c-e064-432c-9f47-8886e4932ac8
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fcce2120-7890-4018-b187-a46660644b18'
+  module:
+    - block_content
+    - system
+  theme:
+    - discreet_tan
+id: jivo_block
+theme: discreet_tan
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:fcce2120-7890-4018-b187-a46660644b18'
+settings:
+  id: 'block_content:fcce2120-7890-4018-b187-a46660644b18'
+  label: jivo
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

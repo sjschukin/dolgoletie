@@ -1,0 +1,8 @@
+uuid: ceb86ae7-d360-43c9-b10b-8bc05d645b7e
+langcode: ru
+status: true
+dependencies: {  }
+id: medium_alternate
+label: 'Средняя дата (альтернативная)'
+locked: false
+pattern: 'd.m.Y, D - H:i'

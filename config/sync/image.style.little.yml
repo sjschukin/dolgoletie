@@ -1,0 +1,15 @@
+uuid: 1062c805-8052-4259-ad0d-84068f9b3bf0
+langcode: ru
+status: true
+dependencies: {  }
+name: little
+label: Небольшой
+effects:
+  357f2295-faf0-4430-a409-5e3bb65c59b8:
+    uuid: 357f2295-faf0-4430-a409-5e3bb65c59b8
+    id: image_scale
+    weight: 1
+    data:
+      width: 300
+      height: null
+      upscale: false

@@ -1,0 +1,44 @@
+uuid: ddd351ae-e396-45ce-90a0-0b316cb0cc5a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.award.field_description
+    - field.field.node.award.field_image
+    - image.style.square_600
+    - node.type.award
+  module:
+    - image
+    - text
+    - user
+id: node.award.teaser
+targetEntityType: node
+bundle: award
+mode: teaser
+content:
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: square_600
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

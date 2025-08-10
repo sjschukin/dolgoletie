@@ -1,0 +1,25 @@
+uuid: 4a700afb-a543-4cf0-a4d8-1a9245a87008
+langcode: ru
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.video_lesson.field_activity_type
+    - field.field.node.video_lesson.field_video_html
+    - node.type.video_lesson
+  module:
+    - user
+id: node.video_lesson.teaser
+targetEntityType: node
+bundle: video_lesson
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_activity_type: true
+  field_video_html: true
+  langcode: true

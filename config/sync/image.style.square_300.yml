@@ -1,0 +1,15 @@
+uuid: da11281a-f9de-4661-a2eb-b79c09e14dee
+langcode: ru
+status: true
+dependencies: {  }
+name: square_300
+label: Square_300
+effects:
+  60c1b281-e6f4-4ccb-9514-2b24f24caaa9:
+    uuid: 60c1b281-e6f4-4ccb-9514-2b24f24caaa9
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 300
+      anchor: center-center

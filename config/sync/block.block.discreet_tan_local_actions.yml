@@ -1,0 +1,20 @@
+uuid: 1b1d265c-548e-44ca-b951-4db78b6e2f77
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - discreet_tan
+_core:
+  default_config_hash: x7i-qQGxV0zscTgQxDJkT6u40z9TlpkMFkXCxpq0iCw
+id: discreet_tan_local_actions
+theme: discreet_tan
+region: content
+weight: -9
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Основные действия администратора'
+  label_display: '0'
+  provider: core
+visibility: {  }

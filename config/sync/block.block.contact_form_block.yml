@@ -1,0 +1,31 @@
+uuid: d1d85bd9-eda7-4327-8bbb-58e499c9d79b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - webform.webform.contact_form
+  module:
+    - system
+    - webform
+  theme:
+    - discreet_tan
+id: contact_form_block
+theme: discreet_tan
+region: content
+weight: 5
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Свяжитесь с нами'
+  label_display: '0'
+  provider: webform
+  webform_id: contact_form
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

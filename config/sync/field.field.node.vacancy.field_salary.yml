@@ -1,0 +1,23 @@
+uuid: 4df04ee8-ee12-41db-b72c-086e87bf6819
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_salary
+    - node.type.vacancy
+id: node.vacancy.field_salary
+field_name: field_salary
+entity_type: node
+bundle: vacancy
+label: 'Заработная плата'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' &#8381;'
+field_type: integer

@@ -1,0 +1,38 @@
+uuid: c83f0c31-4aef-4d86-b7a2-e0f59b060c8b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.video_lesson.field_activity_type
+    - field.field.node.video_lesson.field_video_html
+    - node.type.video_lesson
+  module:
+    - text
+    - user
+id: node.video_lesson.default
+targetEntityType: node
+bundle: video_lesson
+mode: default
+content:
+  field_activity_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_video_html:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true

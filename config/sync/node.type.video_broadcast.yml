@@ -1,0 +1,17 @@
+uuid: 32125b58-1233-4acc-95ea-0f3010f71059
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Видеотрансляция
+type: video_broadcast
+description: 'Расписание видеотрансляции, которое включает в себя наименование, время и ссылку на трансляцию'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,22 @@
+uuid: 39f97dbd-3b51-4d84-9559-7cc754dee3d7
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: news_path
+label: Новости
+type: 'canonical_entities:node'
+pattern: 'news/[node:title]'
+selection_criteria:
+  d836e6c8-8e62-437f-8d6e-c0143b092989:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: d836e6c8-8e62-437f-8d6e-c0143b092989
+    context_mapping:
+      node: node
+    bundles:
+      news: news
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,17 @@
+uuid: 06cc8600-c050-4379-aa7c-35cd7039a828
+langcode: ru
+status: true
+dependencies: {  }
+name: 'HTML для вставки видео'
+format: html_video
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<iframe src width height allow frameborder allowfullscreen>'
+      filter_html_help: true
+      filter_html_nofollow: false

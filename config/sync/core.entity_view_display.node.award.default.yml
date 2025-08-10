@@ -1,0 +1,43 @@
+uuid: 579e1076-fc99-4ac0-b686-61c423c9d43d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.award.field_description
+    - field.field.node.award.field_image
+    - image.style.square_300
+    - node.type.award
+  module:
+    - image
+    - text
+    - user
+id: node.award.default
+targetEntityType: node
+bundle: award
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: square_300
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

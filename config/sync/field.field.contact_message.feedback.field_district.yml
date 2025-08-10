@@ -1,0 +1,29 @@
+uuid: c857740d-38aa-43ee-bc2e-0b77121a3e4e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+    - field.storage.contact_message.field_district
+    - taxonomy.vocabulary.districts
+id: contact_message.feedback.field_district
+field_name: field_district
+entity_type: contact_message
+bundle: feedback
+label: Район
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      districts: districts
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

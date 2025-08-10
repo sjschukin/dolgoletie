@@ -1,0 +1,29 @@
+uuid: 6754ac0d-d75c-4411-817b-6d562a41d7ac
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.broadcasts
+  module:
+    - system
+    - views
+  theme:
+    - discreet_tan
+id: block_broadcasts_for_mind
+theme: discreet_tan
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:broadcasts-block_2'
+settings:
+  id: 'views_block:broadcasts-block_2'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /activities/lessons-for-mind

@@ -1,0 +1,17 @@
+uuid: b73d29e5-ac16-4d2f-b970-39895f04aead
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Активность
+type: activity
+description: 'Активность, которая будет отображаться на сайте'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

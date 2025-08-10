@@ -1,0 +1,32 @@
+uuid: 259ea3e8-ae7d-430d-ad2b-bf4df3988f82
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.districts.field_mapping_id
+    - taxonomy.vocabulary.districts
+  module:
+    - text
+id: taxonomy_term.districts.default
+targetEntityType: taxonomy_term
+bundle: districts
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_mapping_id:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
