@@ -297,7 +297,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<h1 class=\"fs-4\"><a href=\"{{ view_node_1 }}\">{{ created }}. {{ title }}</a></h1>\r\n{% if field_image is not empty %}\r\n<img class=\"rounded me-3 float-lg-start\" src=\"{{ field_image }}\" alt=\"{{ title }}\" width=\"150\">\r\n{% endif %}\r\n{{ body }}\r\n<p class=\"mb-3\"><a href=\"{{ view_node_1 }}\">Подробнее »</a></p>"
+            text: "<h1 class=\"fs-4\"><a href=\"{{ view_node_1 }}\">{{ created }}. {{ title }}</a></h1>\r\n{% if field_image is not empty %}\r\n<img class=\"rounded me-3 mb-3 float-lg-start\" src=\"{{ field_image }}\" alt=\"{{ title }}\" width=\"150\">\r\n{% endif %}\r\n{{ body }}\r\n<p class=\"mb-3\"><a href=\"{{ view_node_1 }}\">Подробнее »</a></p>"
             make_link: false
             path: ''
             absolute: false
