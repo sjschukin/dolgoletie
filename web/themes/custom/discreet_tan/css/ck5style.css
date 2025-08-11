@@ -12331,139 +12331,58 @@ a > .ck-content code {
   z-index: 99;
   transition: all 0.3s ease-out 0s;
 }
-.ck-content .navbar {
+.ck-content .header-navbar .navbar {
   padding: 25px 0;
   border-style: none;
   position: relative;
   transition: all 0.3s ease-out 0s;
 }
 @media (max-width: 767.98px) {
-  .ck-content .navbar .navbar-brand .site-logo {
+  .ck-content .header-navbar .navbar .navbar-brand .site-logo {
     display: none;
   }
 }
-.ck-content .navbar .navbar-brand .site-title {
+.ck-content .header-navbar .navbar .navbar-brand .site-title {
   text-shadow: 1px 1px 0px #000000;
 }
-.ck-content .navbar-brand {
+.ck-content .header-navbar .navbar .offcanvas-title {
+  padding-left: 1.5rem;
+}
+.ck-content .header-navbar .navbar .navbar-brand {
   padding: 0;
 }
-.ck-content .navbar-toggler {
+.ck-content .header-navbar .navbar .navbar-toggler {
   padding: 0;
   border: none;
 }
-.ck-content .navbar-toggler:focus {
+.ck-content .header-navbar .navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.ck-content .header-navbar .navbar .navbar-toggler:focus {
   box-shadow: none;
 }
-.ck-content .navbar-toggler .toggler-icon {
-  width: 30px;
-  height: 2px;
-  background-color: #fff;
-  display: block;
-  margin: 5px 0;
-  position: relative;
-  transition: all 0.3s ease-out 0s;
+.ck-content .header-navbar .navbar .navbar-toggler .navbar-toggler-icon {
+  width: 2rem;
+  height: 2rem;
 }
-.ck-content .navbar-toggler[aria-expanded=true] .toggler-icon:nth-of-type(1) {
-  transform: rotate(45deg);
-  top: 7px;
-}
-.ck-content .navbar-toggler[aria-expanded=true] .toggler-icon:nth-of-type(2) {
-  opacity: 0;
-}
-.ck-content .navbar-toggler[aria-expanded=true] .toggler-icon:nth-of-type(3) {
-  transform: rotate(135deg);
-  top: -7px;
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .ck-content .navbar-collapse {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    z-index: 9;
-    box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
-    padding: 5px 12px;
-  }
-}
-@media (max-width: 767.98px) {
-  .ck-content .navbar-collapse {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    z-index: 9;
-    box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
-    padding: 5px 12px;
-  }
-}
-.ck-content .navbar-nav {
-  align-items: center;
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .ck-content .navbar-nav {
-    align-items: flex-start;
-  }
-}
-.ck-content .navbar-nav .nav-item {
-  position: relative;
-  margin-right: 40px;
-}
-.ck-content .navbar-nav .nav-item:last-child {
-  margin-right: 0;
-}
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .ck-content .navbar-nav .nav-item {
-    margin-right: 30px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .ck-content .navbar-nav .nav-item {
-    margin-right: 0;
-  }
-}
-@media (max-width: 767.98px) {
-  .ck-content .navbar-nav .nav-item {
-    margin: 0;
-  }
-}
-.ck-content .navbar-nav .nav-item a {
-  padding: 0;
+.ck-content .header-navbar .navbar .navbar-nav .nav-item a {
+  padding: 0.5rem 1.5rem;
   font-weight: 400;
   font-size: 16px;
-  color: #fff;
-  transition: all 0.3s ease-out 0s;
+  color: #283747;
 }
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .ck-content .navbar-nav .nav-item a {
-    display: block;
-    padding: 8px 0;
-    color: #283747;
-  }
-}
-@media (max-width: 767.98px) {
-  .ck-content .navbar-nav .nav-item a {
-    display: block;
-    padding: 6px 0;
-    color: #283747;
-  }
-}
-.ck-content .navbar-nav .nav-item a:hover {
+.ck-content .header-navbar .navbar .navbar-nav .nav-item a:hover {
   color: #ff851b;
 }
-.ck-content .navbar-nav li.nav-item:last-child a {
-  padding: 12px 28px;
+.ck-content .header-navbar .navbar .navbar-nav li.nav-item:last-child a {
+  padding: 0.5rem 1.5rem;
   border-radius: 30px;
   background: #ff851b;
   color: #fff;
   display: inline-block;
-  position: relative;
-  z-index: 1;
   overflow: hidden;
 }
-.ck-content .navbar-nav li.nav-item:last-child a::after {
+.ck-content .header-navbar .navbar .navbar-nav li.nav-item:last-child a::after {
   content: "";
   position: absolute;
   width: 0%;
@@ -12474,40 +12393,28 @@ a > .ck-content code {
   z-index: -1;
   transition: all 0.3s ease-out 0s;
 }
-.ck-content .navbar-nav li.nav-item:last-child a:hover::after {
+.ck-content .header-navbar .navbar .navbar-nav li.nav-item:last-child a:hover::after {
   width: 100%;
 }
-.ck-content .sticky {
+.ck-content .header-navbar.sticky {
   position: fixed;
   z-index: 90;
   background-color: #fff;
   box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-out 0s;
 }
-.ck-content .sticky .navbar {
+.ck-content .header-navbar.sticky .navbar {
   padding: 8px 0;
 }
-.ck-content .sticky .navbar .navbar-brand .site-title {
+.ck-content .header-navbar.sticky .navbar .navbar-brand .site-title {
   color: #283747;
   text-shadow: none;
 }
-.ck-content .sticky .navbar .navbar-brand .site-title:hover {
+.ck-content .header-navbar.sticky .navbar .navbar-brand .site-title:hover {
   color: #283747;
 }
-.ck-content .sticky .navbar-toggler {
-  background-color: #283747;
-}
-.ck-content .sticky .navbar-nav .nav-item a {
-  color: #283747;
-}
-.ck-content .sticky .navbar-nav .nav-item a::before {
-  background-color: #ff851b;
-}
-.ck-content .sticky .navbar-nav .nav-item a:hover {
-  color: #ff851b;
-}
-.ck-content .sticky .navbar-nav .nav-item a.header-btn {
-  color: #fff;
+.ck-content .header-navbar.sticky .navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2840, 55, 71, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 .ck-content .hero-area {
   background-image: url("../images/hero-bg.jpg");

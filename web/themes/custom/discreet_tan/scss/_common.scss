@@ -238,209 +238,116 @@ body.path-frontpage #main-content {
   width: 100%;
   z-index: 99;
   transition: all 0.3s ease-out 0s;
-}
-
-.navbar {
-  padding: 25px 0;
-  border-style: none;
-  position: relative;
-  transition: all 0.3s ease-out 0s;
-
-  .navbar-brand {
-    .site-logo {
-      @include media-breakpoint-down(md) {
-        display: none;
-      }
-    }
-
-    .site-title {
-      text-shadow: 1px 1px 0px #000000;
-    }
-  }
-}
-
-.navbar-brand {
-  padding: 0;
-}
-
-.navbar-toggler {
-  padding: 0;
-  border: none;
-
-  &:focus {
-    box-shadow: none;
-  }
-
-
-
-  .toggler-icon {
-    width: 30px;
-    height: 2px;
-    background-color: $basic-white-color;
-    display: block;
-    margin: 5px 0;
-    position: relative;
-    transition: all 0.3s ease-out 0s;
-  }
-
-  &[aria-expanded="true"] .toggler-icon {
-    &:nth-of-type(1) {
-      transform: rotate(45deg);
-      top: 7px;
-    }
-
-    &:nth-of-type(2) {
-      opacity: 0;
-    }
-
-    &:nth-of-type(3) {
-      transform: rotate(135deg);
-      top: -7px;
-    }
-  }
-}
-
-.navbar-collapse {
-  @include media-breakpoint-between(md, lg) {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: $basic-white-color;
-    z-index: 9;
-    box-shadow: 0px 15px 20px 0px $basic-shadow-color;
-    padding: 5px 12px;
-  }
-
-  @include media-breakpoint-down(md) {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: $basic-white-color;
-    z-index: 9;
-    box-shadow: 0px 15px 20px 0px $basic-shadow-color;
-    padding: 5px 12px;
-  }
-}
-
-.navbar-nav {
-  align-items: center;
-
-  @include media-breakpoint-only(md) {
-    align-items: flex-start;
-  }
-
-  .nav-item {
-    position: relative;
-    margin-right: 40px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-
-    @include media-breakpoint-between(lg, xl) {
-      margin-right: 30px;
-    }
-
-    @include media-breakpoint-between(md, lg) {
-      margin-right: 0;
-    }
-
-    @include media-breakpoint-down(md) {
-      margin: 0;
-    }
-
-    a {
-      padding: 0;
-      font-weight: 400;
-      font-size: 16px;
-      color: $basic-white-color;
-      transition: all 0.3s ease-out 0s;
-
-      @include media-breakpoint-between(md, lg) {
-        display: block;
-        padding: 8px 0;
-        color: $basic-dark-color;
-      }
-
-      @include media-breakpoint-down(md) {
-        display: block;
-        padding: 6px 0;
-        color: $basic-dark-color;
-      }
-
-      &:hover {
-        color: $basic-orange-color;
-      }
-    }
-  }
-
-  li.nav-item:last-child a {
-    padding: 12px 28px;
-    border-radius: 30px;
-    background: $basic-orange-color;
-    color: $basic-white-color;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-
-    &::after {
-      content: '';
-      position: absolute;
-      width: 0%;
-      height: 100%;
-      background: $basic-light-color;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      transition: all 0.3s ease-out 0s;
-    }
-
-    &:hover::after {
-      width: 100%;
-    }
-  }
-}
-
-.sticky {
-  position: fixed;
-  z-index: 90;
-  background-color: $basic-white-color;
-  box-shadow: 0px 20px 50px 0px $basic-shadow-color;
-  transition: all 0.3s ease-out 0s;
 
   .navbar {
-    padding: 8px 0;
+    padding: 25px 0;
+    border-style: none;
+    position: relative;
+    transition: all 0.3s ease-out 0s;
 
-    .navbar-brand .site-title {
-      color: $basic-dark-color;
-      text-shadow: none;
+    .navbar-brand {
+      .site-logo {
+        @include media-breakpoint-down(md) {
+          display: none;
+        }
+      }
 
-      &:hover {
-        color: $basic-dark-color;
+      .site-title {
+        text-shadow: 1px 1px 0px #000000;
+      }
+    }
+
+    .offcanvas-title {
+      padding-left: 1.5rem;
+    }
+
+    .navbar-brand {
+      padding: 0;
+    }
+
+    .navbar-toggler {
+      padding: 0;
+      border: none;
+
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      .navbar-toggler-icon {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+
+    .navbar-nav {
+      .nav-item {
+        a {
+          padding: 0.5rem 1.5rem;
+          font-weight: 400;
+          font-size: 16px;
+          color: $basic-dark-color;
+
+          &:hover {
+            color: $basic-orange-color;
+          }
+        }
+      }
+
+      li.nav-item:last-child a {
+        padding: 0.5rem 1.5rem;
+        border-radius: 30px;
+        background: $basic-orange-color;
+        color: $basic-white-color;
+        display: inline-block;
+        overflow: hidden;
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 0%;
+          height: 100%;
+          background: $basic-light-color;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          transition: all 0.3s ease-out 0s;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
       }
     }
   }
 
-  .navbar-toggler {
-    background-color: $basic-dark-color;
-  }
+  &.sticky {
+    position: fixed;
+    z-index: 90;
+    background-color: $basic-white-color;
+    box-shadow: 0px 20px 50px 0px $basic-shadow-color;
+    transition: all 0.3s ease-out 0s;
 
-  .navbar-nav .nav-item a {
-    color: $basic-dark-color;
+    .navbar {
+      padding: 8px 0;
 
-    &::before {
-      background-color: $basic-orange-color;
-    }
+      .navbar-brand .site-title {
+        color: $basic-dark-color;
+        text-shadow: none;
 
-    &:hover {
-      color: $basic-orange-color;
-    }
+        &:hover {
+          color: $basic-dark-color;
+        }
+      }
 
-    &.header-btn {
-      color: $basic-white-color;
+      .navbar-toggler {
+        .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2840, 55, 71, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+      }
     }
   }
 }
