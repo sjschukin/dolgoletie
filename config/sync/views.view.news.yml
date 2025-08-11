@@ -441,6 +441,10 @@ display:
             news: news
       style:
         type: default
+        options:
+          grouping: {  }
+          row_class: clearfix
+          default_row_class: true
       row:
         type: fields
         options:
